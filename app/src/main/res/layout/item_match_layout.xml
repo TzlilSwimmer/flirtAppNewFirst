@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layoutDirection="ltr">
+    android:layoutDirection="ltr"
+    android:background="@color/gray_background">
 
     <RelativeLayout
         android:id="@+id/got_match_container"
@@ -13,26 +14,34 @@
         android:layout_marginEnd="55dp"
         android:layout_marginStart="55dp">
 
-        <ImageView
-            android:id="@+id/heart"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:layout_alignParentTop="true"
-            android:src="@drawable/ic_hearts"/>
-
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/heart"
-            android:textSize="25sp"
-            android:text="@string/you_got_a_match"/>
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/heart"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_hearts"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/you_got_a_match"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
 
         <ImageView
             android:id="@+id/match_picture"
             android:layout_width="125dp"
             android:layout_height="155dp"
             android:layout_alignParentEnd="true"
-            android:src="@drawable/screenshot"
             android:scaleType="centerCrop"/>
 
         <TextView
@@ -40,6 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
+            android:textColor="@color/colorPrimary"
             android:layout_below="@id/match_picture"
             android:layout_alignStart="@+id/match_picture"
             android:text="Tali, 25\nTel Aviv"/>
@@ -57,12 +67,14 @@
             android:id="@+id/dont_waste_time"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimary"
             android:text="@string/dont_waste_time"/>
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="@string/i_wanna_talk"
             android:textAllCaps="false"
             android:textSize="25sp"

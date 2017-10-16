@@ -60,7 +60,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(-34, 151);
         myMarker = mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney")
-        .icon(BitmapDescriptorFactory.fromBitmap(getMarkerBitmapFromView(android.R.drawable.btn_dialog))));
+        .icon(BitmapDescriptorFactory.fromBitmap(getMarkerBitmapFromView(R.drawable.barby))));
         mMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
             @Override
             public void onInfoWindowClick(Marker marker) {

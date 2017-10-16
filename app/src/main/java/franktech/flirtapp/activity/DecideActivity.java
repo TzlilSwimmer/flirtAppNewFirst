@@ -19,6 +19,6 @@ public class DecideActivity extends AppCompatActivity {
         setContentView(R.layout.activity_decide);
 
         ImageView picture = (ImageView) findViewById(R.id.picture);
-        picture.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.screenshot));
+        picture.setImageDrawable(ContextCompat.getDrawable(this, R.drawable.barby));
     }
 }

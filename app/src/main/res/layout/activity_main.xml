@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layoutDirection="ltr">
+    android:layoutDirection="ltr"
+    android:background="@color/gray_background">
 
     <ImageButton
         android:id="@+id/icon"
@@ -10,8 +11,7 @@
         android:layout_height="30dp"
         android:background="?android:selectableItemBackground"
         android:src="@android:drawable/ic_lock_power_off"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"/>
+        android:layout_alignParentEnd="true"/>
 
     <TextView
         android:id="@+id/title"
@@ -20,7 +20,7 @@
         android:layout_centerInParent="true"
         android:layout_below="@+id/icon"
         android:textSize="55sp"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimary"
         android:text="@string/may_i_title"
         android:gravity="center"/>
 
@@ -39,7 +39,7 @@
         android:layout_below="@+id/heart_on_map"
         android:layout_marginTop="15dp"
         android:textSize="45sp"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimary"
         android:text="@string/see_in_real_life"
         android:gravity="center"/>
 
@@ -52,7 +52,6 @@
         android:layout_marginBottom="15dp"
         android:textAllCaps="false"
         android:textSize="18sp"
-        android:text="@string/open_with_facebook"
-        android:textColor="@android:color/holo_blue_dark"/>
+        android:text="@string/open_with_facebook"/>
 
 </RelativeLayout>
