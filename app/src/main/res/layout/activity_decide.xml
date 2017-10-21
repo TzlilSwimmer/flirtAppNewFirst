@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutDirection="ltr"
-    android:background="@color/gray_background">
+    android:background="@drawable/regular_background">
 
     <franktech.flirtapp.view.StripBar
         android:id="@+id/strip_bar"
@@ -11,10 +11,10 @@
         android:layout_height="56dp"
         android:layout_alignParentTop="true"/>
 
-    <ImageButton
+    <ImageView
         android:id="@+id/block"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:background="?android:selectableItemBackground"
         android:src="@drawable/ic_block_user"
         android:layout_alignParentEnd="true"
@@ -35,16 +35,16 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true">
 
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="?android:selectableItemBackground"
-            android:src="@drawable/ic_cancel_music"/>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_cancel_music"
+            android:layout_margin="20dp"/>
 
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:background="?android:selectableItemBackground"
-            android:src="@drawable/ic_hearts" />
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/ic_hearts"
+            android:layout_margin="20dp"/>
     </LinearLayout>
 </RelativeLayout>

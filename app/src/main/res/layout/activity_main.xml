@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layoutDirection="ltr"
-    android:background="@color/gray_background">
+    android:background="@drawable/regular_background">
 
     <ImageButton
         android:id="@+id/icon"
